@@ -3,17 +3,15 @@ import { StyleSheet, View } from 'react-native';
 
 import BodyText from './src/elements/BodyText';
 
-import MemoList from './src/components/memoList';
 import Appbar from './src/components/appbar';
-import CircleButton from './src/elements/CircleButton';
+import MemoListScreen from './src/screens/MemoListScreen';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Appbar />
-      <MemoList />
-      <CircleButton>+</CircleButton>
+      <MemoListScreen />
     </View>
   );
 }
@@ -23,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFDF6',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingTop: 60,
   },
 });
